@@ -5,9 +5,10 @@ import { data } from "./data";
 import Navigation from "./components/Navigation";
 import Products from "./components/Products";
 import ShoppingCart from "./components/ShoppingCart";
+import ProductContextProvider from "./contexts/ProductContextProvider";
+import CartContextProvider from "./contexts/CartContextProvider";
 
 function App() {
-  const [products, setProducts] = useState(data);
   const [cart, setCart] = useState([]);
 
   const addItem = (item) => {
@@ -15,17 +16,16 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <Navigation cart={cart} />
-      <main className="content">
-        <Route exact path="/">
-          <Products products={products} addItem={addItem} />
-        </Route>
-        <Route path="/cart">
-          <ShoppingCart cart={cart} />
-        </Route>
-      </main>
-    </div>
+    <ProductContextProvider>
+      <CartContextProvider>
+        <div className="App">
+          <main className="content">
+            <Route exact path="/"></Route>
+            <Route path="/cart"></Route>
+          </main>
+        </div>
+      </CartContextProvider>
+    </ProductContextProvider>
   );
 }
 

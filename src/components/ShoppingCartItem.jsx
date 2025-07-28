@@ -1,14 +1,17 @@
 import { ScCartItem, ScCartItemDetails } from "./scParts";
+import { useContext } from "react";
+import { CartContext } from "../contexts/CartContextProvider";
 
-const Item = (props) => {
+const Item = ({ id, title, price, image }) => {
+  const { removeItem } = useContext(CartContext);
   return (
     <ScCartItem>
-      <img src={props.image} alt={`${props.title} book`} />
+      <img src={image} alt={`${title} book`} />
 
       <ScCartItemDetails>
-        <h2>{props.title}</h2>
-        <p>$ {props.price}</p>
-        <button>Remove from cart</button>
+        <h2>{title}</h2>
+        <p>$ {price}</p>
+        <button onClick={() => removeItem(id)}>Remove from cart</button>
       </ScCartItemDetails>
     </ScCartItem>
   );

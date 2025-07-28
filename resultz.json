@@ -1,0 +1,77 @@
+{
+  "stats": "9 passed, 9 failed out of 18",
+  "tests": [
+    {
+      "name": "contexts klasöründe CartContextProvider.jsx dosyası oluşturulmuş mu?",
+      "state": "pass"
+    },
+    {
+      "name": "contexts klasöründe ProductContextProvider.jsx dosyası oluşturulmuş mu?",
+      "state": "pass"
+    },
+    {
+      "name": "CartContextProvider.jsx dosyasında createContext() ile context oluşturulmuş mu?",
+      "state": "pass"
+    },
+    {
+      "name": "ProductContextProvider.jsx dosyasında createContext() ile context oluşturulmuş mu?",
+      "state": "pass"
+    },
+    {
+      "name": "CartContextProvider.jsx dosyasında CartContext.Provider kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "ProductContextProvider.jsx dosyasında ProductContext.Provider kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "CartContext.Provider'a value'lar aktarılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "ProductContext.Provider'a value'lar aktarılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "App.jsx'de oluşturulan her 2 provider da kullanılmış mı?",
+      "state": "pass"
+    },
+    {
+      "name": "App.jsxde useStateler (import ve tanımlamalar) silinmiş mi?",
+      "state": "fail"
+    },
+    {
+      "name": "App.jsx'de Products componentine gönderilen propslar (products, addItem) silinmiş mi?",
+      "state": "fail"
+    },
+    {
+      "name": "App.jsxde Navigation componentine gönderilen props (cart) silinmiş mi?",
+      "state": "fail"
+    },
+    {
+      "name": "App.jsxde ShoppingCart componentine gönderilen props (cart) silinmiş mi?",
+      "state": "fail"
+    },
+    {
+      "name": "ContextAPI eklendikten sonra ana sayfada 4 kitap da görünüyor mu?",
+      "state": "fail"
+    },
+    {
+      "name": "İlk kitapta 'Add to cart' butonuna tıklanınca sağ üstte 1 yazıyor mu?",
+      "state": "fail"
+    },
+    {
+      "name": "İkinci kitapta Add to cart butonuna tıklanınca sağ üst cartta 2 yazıyor mu?",
+      "state": "fail"
+    },
+    {
+      "name": "İlk kitapta 'Add to cart' butonuna tıklanınca sepete ekliyor mu?",
+      "state": "fail"
+    },
+    {
+      "name": "Cart sayfasında 'Remove from cart' kitabı sepetten çıkarıyor mu?",
+      "state": "fail"
+    }
+  ]
+}
